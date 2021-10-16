@@ -1,13 +1,13 @@
 ARG BUILD_ARCH
 # hadolint ignore=DL3006
-FROM ghcr.io/hassio-addons/debian-base/${BUILD_ARCH}:5.1.0
+FROM ghcr.io/hassio-addons/debian-base/${BUILD_ARCH}:5.1.1
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 # hadolint ignore=DL3003
-RUN apt-get -qq update \
+RUN apt-get -qq update --allow-releaseinfo-change \
     && apt-get -qq install --no-install-recommends -y nginx \
     && (apt-get autoremove -y; apt-get autoclean -y)
 

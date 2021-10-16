@@ -1,5 +1,5 @@
 {
-    "name": "Frigate hass.io addons",
-    "url": "https://github.com/blakeblackshear/frigate-hass-addons",
-    "maintainer": "blakeblackshear"
+    "name": "Frigate hass.io addons sds",
+    "url": "https://github.com/simone-desantis/frigate-hass-addons",
+    "maintainer": "sds-fork blakeblackshear"
 }
